@@ -1,0 +1,69 @@
+<!doctype html>
+<!-- Name: YOUR NAME | Roll No: YOUR ROLL NUMBER | Set: B -->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reserve a Table | Spice Garden</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">SG</span><span>Spice
+                Garden<small>Dhanmondi, Dhaka</small></span></a>
+        <nav aria-label="Main navigation"><a href="index.html">Menu &amp; order</a><a class="active"
+                href="reservation.html">Reserve a table</a><a href="index.html#hours">Opening hours</a></nav>
+    </header>
+    <main>
+        <section class="reservation-hero">
+            <p class="eyebrow">SAVE YOUR SEAT</p>
+            <h1>A table for<br>good times.</h1>
+            <p>Tell us when you would like to visit. We look forward to welcoming you.</p>
+        </section>
+        <section class="reservation-wrap">
+            <form id="reservation-form" novalidate>
+                <div class="form-heading">
+                    <p class="eyebrow">RESERVATION DETAILS</p>
+                    <h2>Book a table</h2>
+                    <p>Fields marked * are required.</p>
+                </div>
+                <div class="form-grid"><label>Full name *<input name="name" required minlength="2" autocomplete="name"
+                            placeholder="Your name"></label><label>Phone number *<input name="phone" type="tel" required
+                            autocomplete="tel" placeholder="01XXXXXXXXX"><small>Bangladesh mobile number, e.g.
+                            01712345678</small></label><label>Date *<input name="date" type="date"
+                            required></label><label>Time *<input name="time" type="time" list="times" required><datalist
+                            id="times">
+                            <option value="12:00">
+                            <option value="13:00">
+                            <option value="18:00">
+                            <option value="19:00">
+                            <option value="20:00">
+                        </datalist></label><label>Number of guests *<input name="guests" type="number" min="1" max="12"
+                            value="2" required></label><label class="full">Occasion (optional)<input name="occasion"
+                            list="occasions" placeholder="Choose or type an occasion"><datalist id="occasions">
+                            <option value="Birthday">
+                            <option value="Anniversary">
+                            <option value="Family dinner">
+                            <option value="Other">
+                        </datalist></label></div>
+                <fieldset>
+                    <legend>Anything we should know? (optional)</legend><label><input name="preferences" type="checkbox"
+                            value="Window seat"> Window seat</label><label><input name="preferences" type="checkbox"
+                            value="High chair"> High chair</label><label><input name="preferences" type="checkbox"
+                            value="Vegetarian options"> Vegetarian options</label>
+                </fieldset>
+                <div id="form-errors" role="alert" aria-live="polite"></div><button id="submit-reservation"
+                    class="button dark" type="submit" disabled>Confirm reservation</button>
+            </form>
+            <aside id="confirmation" aria-live="polite" hidden></aside>
+        </section>
+    </main>
+    <footer><a class="brand" href="index.html"><span class="brand-mark">SG</span><span>Spice Garden<small>Good food,
+                    good company.</small></span></a>
+        <p>© 2026 Spice Garden · Dhanmondi, Dhaka</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!doctype html>
+<!-- Name: YOUR NAME | Roll No: YOUR ROLL NUMBER | Set: B -->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>sams dine | Menu &amp; Order</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">SG</span><span>sams
+                Garden<small>Halishahar,Chattogram</small></span></a>
+        <nav aria-label="Main navigation"><a class="active" href="index.html">Menu &amp; order</a><a
+                href="reservation.html">Reserve a table</a><a href="#hours">Opening hours</a></nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div>
+                <p class="eyebrow">GOOD FOOD, GOOD COMPANY</p>
+                <h1>A taste of home,<br>made with heart.</h1>
+                <p>Fresh Bengali favorites, prepared daily in the heart of Dhanmondi.</p><a class="button light"
+                    href="#menu">Explore the menu ↓</a>
+            </div>
+        </section>
+        <section class="section" id="menu">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">FROM OUR KITCHEN</p>
+                    <h2>Made for sharing</h2>
+                </div>
+                <p>Choose a favorite and add it to your order.</p>
+            </div>
+            <div id="menu-list" class="menu-sections"></div>
+        </section>
+        <section class="order-section">
+            <div class="order-panel">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">YOUR SELECTION</p>
+                        <h2>Your order</h2>
+                    </div><span id="cart-count">0 items</span>
+                </div>
+                <div id="cart-items"></div>
+                <div class="bill-lines">
+                    <p><span>Subtotal</span><b>BDT <span id="subtotal">0.00</span></b></p>
+                    <p id="discount-line" hidden><span>10% discount</span><b>− BDT <span id="discount">0.00</span></b>
+                    </p>
+                    <p><span>VAT (5%)</span><b>BDT <span id="vat">0.00</span></b></p>
+                    <p class="grand-total"><span>Total</span><b>BDT <span id="total">0.00</span></b></p>
+                </div>
+                <p class="note">A 10% discount applies when your subtotal is above BDT 1,000. VAT is calculated after
+                    discount.</p>
+            </div>
+        </section>
+        <section class="section visit" id="hours">
+            <div>
+                <p class="eyebrow">COME BY</p>
+                <h2>Visit Sams Garden</h2>
+                <p>House 12, Road 7, Dhanmondi, Dhaka</p><a href="https://maps.google.com/?q=Dhanmondi+Dhaka"
+                    target="_blank" rel="noopener">Find us on Google Maps ↗</a>
+            </div>
+            <div>
+                <h3>Opening hours</h3>
+                <table>
+                    <caption class="sr-only">Restaurant opening hours</caption>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Saturday – Thursday</th>
+                            <td>12:00 PM – 10:00 PM</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Friday</th>
+                            <td>1:00 PM – 11:00 PM</td>
+                        </tr>
+                    </tbody>
+                </table><a class="button dark" href="reservation.html">Book a table</a>
+            </div>
+        </section>
+    </main>
+    <footer><a class="brand" href="index.html"><span class="brand-mark">SG</span><span>Sams Garden<small>Good food,
+                    good company.<b> HALISHAHAR DEMAND</b></small></span></a>
+        <p>© 2026 sams Garden · Halishahar, Chattogram</p>
+    </footer>
+</body>
+
+</html>
